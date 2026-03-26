@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option nav-option-1">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="currentColor"
+                            d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z" />
+                    </svg>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option nav-option-2">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="currentColor"
+                            d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+                    </svg>
+                    <a href="#">Search</a>
+                </div>
+
+            </div>
+            <div class="library">
+                <div class="lib-header">
+
+                    <!-- LEFT -->
+                    <div class="lib-left">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/library_icon.png">
+                        <span>Your Library</span>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="lib-right">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="currentColor"
+                                d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
+                        </svg>
+
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="currentColor"
+                                d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div class="lib-bottom">
+                    <div class="box">
+                        <p class="b1">Create your first playlist</p>
+                        <p class="b2">it 's easy, we will help you</p>
+                        <div class="b3">Create playlist</div>
+                    </div>
+                    <div class="box">
+                        <p class="b1">Let 's find some podcasts to follow</p>
+                        <p class="b2">We will keep you updated on new episodes</p>
+                        <div class="b3">Browse podcasts</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/backward_icon.png" alt="">
+                    <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/forward_icon.png" alt=""
+                        class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <a href="#" class="sticky-nav-options-premium">Explore Premium</a>
+                    <a href="#" class="sticky-nav-options-install"> <svg style="fill: white; height: 14px;"
+                            http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM303 441L223 361C213.6 351.6 213.6 336.4 223 327.1C232.4 317.8 247.6 317.7 256.9 327.1L295.9 366.1L295.9 216C295.9 202.7 306.6 192 319.9 192C333.2 192 343.9 202.7 343.9 216L343.9 366.1L382.9 327.1C392.3 317.7 407.5 317.7 416.8 327.1C426.1 336.5 426.2 351.7 416.8 361L336.8 441C327.4 450.4 312.2 450.4 302.9 441z" />
+                        </svg>
+                        Install App</a>
+                    <a href="#" class="sticky-nav-options-profile"><svg style="fill: white; height: 32px;"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z" />
+                        </svg></a>
+                </div>
+
+            </div>
+            <div class="cards-body">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card1img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                </div>
+
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card2img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card3img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card4img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card2img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card3img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card4img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card2img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card3img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                </div>
+
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card5img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top Songs Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card6img.jpeg"
+                            class="card-img">
+                        <p class="card-title">Top Song India</p>
+                        <p class="card-info">Your weekly update of the most of played...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="music-player">
+            <div class="album">
+                <div class="album-img">
+                    <img src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/card3img.jpeg" />
+                </div>
+                <div class="album-info">
+                    <span class="album-name">Mere Paas Tum Ho</span>
+                    <span class="album-artist">Rahat Fateh Ali Khan</span>
+                </div>
+                <div class="album-like">
+                    <button><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path fill="currentColor"
+                                d="M11.5 0c6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5-11.5-5.153-11.5-11.5 5.153-11.5 11.5-11.5zm0 1c5.795 0 10.5 4.705 10.5 10.5s-4.705 10.5-10.5 10.5-10.5-4.705-10.5-10.5 4.705-10.5 10.5-10.5zm.5 10h6v1h-6v6h-1v-6h-6v-1h6v-6h1v6z" />
+                        </svg></button>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-icon">
+                    <img class="player-icon-1"
+                        src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/player_icon1.png" />
+                    <img class="player-icon-2"
+                        src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/player_icon2.png" />
+                    <img class="player-icon-3"
+                        src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/player_icon3.png" />
+                    <img class="player-icon-4"
+                        src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/player_icon4.png" />
+                    <img class="player-icon-5"
+                        src="https://spotify-clone-safullah-siddiqui.vercel.app/assets/player_icon5.png" />
+                </div>
+                <div class="player-bar">
+                    <span class="curr-time">1:45</span>
+                    <input type="range" min="0" max="100" />
+                    <span class="tol-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline svg-green"
+                    viewBox="0 0 16 16"
+                    style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                    <path fill="green" d="M11.196 8 6 5v6z"></path>
+                    <path fill="green"
+                        d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline svg-mic"
+                    viewBox="0 0 16 16"
+                    style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                    <path fill="white"
+                        d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797M10.5 8.118l-2.619-2.62L4.74 9.075 2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline"
+                    viewBox="0 0 16 16"
+                    style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                    <path fill="white"
+                        d="M15 15H1v-1.5h14zm0-4.5H1V9h14zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5m2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline"
+                    viewBox="0 0 16 16"
+                    style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                    <path fill="white"
+                        d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5zM4 15H2v-1.5h2z">
+                    </path>
+                    <path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"></path>
+                </svg>
+                <div class="control-volume">
+                    <svg data-encore-id="icon" role="presentation" aria-label="Volume high" aria-hidden="false"
+                        class="e-91000-icon e-91000-baseline" id="volume-icon" viewBox="0 0 16 16"
+                        style="--encore-icon-height: var(--encore-graphic-size-informative-smaller); --encore-icon-width: var(--encore-graphic-size-informative-smaller);">
+                        <path fill="white"
+                            d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.64 3.64 0 0 1-1.33-4.967 3.64 3.64 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.14 2.14 0 0 0 0 3.7l5.8 3.35V2.8zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88">
+                        </path>
+                        <path fill="white" d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127z">
+                        </path>
+                    </svg>
+                    <input type="range" class="Volume-range progress-bar">
+                </div>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline"
+                    viewBox="0 0 16 16"
+                    style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                    <path fill="white"
+                        d="M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16z">
+                    </path>
+                    <path fill="white"
+                        d="M15.25 9.007a.75.75 0 0 1 .75.75v4.493a.75.75 0 0 1-.75.75H9.325a.75.75 0 0 1-.75-.75V9.757a.75.75 0 0 1 .75-.75z">
+                    </path>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.25 3C0.25 2.0335 1.0335 1.25 2 1.25H5.375V2.75H2C1.86193 2.75 1.75 2.86193 1.75 3V5.42857H0.25V3ZM14 2.75H10.625V1.25H14C14.9665 1.25 15.75 2.0335 15.75 3V5.42857H14.25V3C14.25 2.86193 14.1381 2.75 14 2.75ZM1.75 10.5714V13C1.75 13.1381 1.86193 13.25 2 13.25H5.375V14.75H2C1.0335 14.75 0.25 13.9665 0.25 13V10.5714H1.75ZM14.25 13V10.5714H15.75V13C15.75 13.9665 14.9665 14.75 14 14.75H10.625V13.25H14C14.1381 13.25 14.25 13.1381 14.25 13Z"
+                        fill="white"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
