@@ -221,7 +221,7 @@
                 </div>
                 <div class="player-bar">
                     <span class="curr-time">1:45</span>
-                    <input type="range" min="0" max="100" />
+                    <input type="range" min="0" max="100" value="30" class="progress" />
                     <span class="tol-time">3:33</span>
                 </div>
             </div>
@@ -266,7 +266,7 @@
                         <path fill="white" d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127z">
                         </path>
                     </svg>
-                    <input type="range" class="Volume-range progress-bar">
+                   <input type="range" class="Volume-range" min="0" max="100" value="60">
                 </div>
                 <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline"
                     viewBox="0 0 16 16"
@@ -286,6 +286,30 @@
             </div>
         </div>
     </div>
+
+    <script>
+  const slider = document.querySelector(".progress");
+
+  function updateProgress() {
+    const value = slider.value;
+    slider.style.setProperty("--progress", value + "%");
+  }
+
+  slider.addEventListener("input", updateProgress);
+
+  // run once on load
+  updateProgress();
+    const volume = document.querySelector(".Volume-range");
+
+  if (volume) {
+    function updateVolume() {
+      volume.style.setProperty("--volume", volume.value + "%");
+    }
+
+    volume.addEventListener("input", updateVolume);
+    updateVolume();
+  }
+</script>
 </body>
 
 </html>
