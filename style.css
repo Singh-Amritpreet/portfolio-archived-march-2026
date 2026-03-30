@@ -115,13 +115,30 @@ body {
 }
 
 #skills-logo {
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
 }
 
-#skills-logo > img {
+.track {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* VERY IMPORTANT */
+  animation: scroll 15s linear infinite;
+}
+
+#skills-logo img {
   height: 100px;
-  width: auto;
+  min-width: 80px;
+}
+
+/* PERFECT LOOP */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 #projects {
